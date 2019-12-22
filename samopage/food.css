@@ -156,16 +156,13 @@ button:hover {
   opacity: 0.8;
 }
 
-.top-left:nth-child(1) {
+.top-left:nth-child(1,
+.top-right:nth-child(1) {
   opacity: 0.5;
 }
 
 .top-right{
   color: #f0d289;
-}
-
-.top-right:nth-child(1){
-  opacity: 0.5;
 }
 
 .bottom-left,
