@@ -1,0 +1,300 @@
+.Navbar {
+  text-align: center;
+  display: block;
+  margin-top: 2%;
+}
+
+
+.carousel-container{
+  margin-top: 3%;
+  width: 100%;
+  background-color: grey;
+}
+
+.mySlides{
+  width: 100%;
+  height: 65vh;
+}
+
+#center-logo {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  text-align: center;
+}
+
+
+#Navbar_Link-Toggle {
+  display: none;
+}
+
+.innercontainer {
+  margin-left: 9%;
+  margin-right: 10%;
+  width: 55%;
+  margin-top: 3%;
+  align-items: center; 
+}
+
+img {
+  width: 40%;
+}
+
+.links {
+  text-decoration: none;
+  font-size: 13px;
+  color: black;
+  font-weight: bold;
+  padding: 25px;
+}
+
+.links:hover {
+  color: #f58300
+}
+
+a:visited {
+  color: black;
+}
+
+
+#carousel {
+  margin-bottom: 2%;
+  margin-left: 6%;
+  height: auto;
+  padding: 1px;
+  width: 40%;
+}
+
+#follow {
+  display: flex;
+  font-weight: bold;
+  font-size: 15px;
+  color: black;
+  margin-top: 1%;
+  margin-left: 70%;
+  flex-direction: row;
+  width: 100%;
+}
+
+#instalogo {
+  width: 3%;
+}
+
+.top-image {
+  display: flex;
+  margin-left: 10%;
+  margin-right: 5%;
+  margin-top: 2%;
+}
+
+#burgundy {
+  margin-bottom: 2%;
+  margin-left: 15%;
+  border-radius: 5%;
+  width: 100%;
+}
+
+#top{
+  margin-top: 2%;
+}
+#bottom,
+#top {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 5%;
+}
+
+#social-media{
+  display: flex;
+  align-items: center;
+}
+
+.footer {
+  margin-top: 3%;
+  width: 100%;
+  background-color: #f7f7f7;
+  text-align: center;
+  font-size: 10px; 
+  font-family: 'Quicksand', sans-serif;
+}
+
+
+/*CSS animations*/
+
+#hashtag {
+  padding: 7px;
+  font-size: 20px;
+  color: #c95216;
+  font-family: 'Abril Fatface', cursive;
+  font-weight: bold;
+  margin-left: 60%;
+}
+
+#hashtag:hover {
+  animation: animate .5s infinite;
+}
+
+@keyframes animate {
+  0%{
+    transform: translateY(0px);
+  }
+  50%
+  {
+    transform: translateY(-20px);
+  }
+  100%
+  {
+    transform: translateY(0px);
+  }
+}
+
+.pics{
+  border-radius: 25px;
+  width: 100%;
+  margin-left: 70%;
+}
+
+/*end of CSS animations*/
+
+/*Responsive web design*/
+
+@media screen and (max-width: 768px) {
+
+  #carousel {
+    width: 30%;
+    margin-left: 15%;
+
+  }
+
+  #burgundy,
+  a {
+    width: 50%;
+  }
+
+  
+  #hashtag{
+    width: 30%;
+    font-size: 14px;
+    text-align: center;
+    margin-left: 55%;
+  }
+
+  .innercontainer{
+    width: 30%;
+    margin-left: 26%;
+  }
+
+
+.footer {
+  display: flex;
+  margin-top: 10%;
+  flex-direction: column;
+  width: 100%;
+  } 
+
+
+  img,
+  .Navbar {
+    text-align: left;
+    margin-top: 2%;
+  }
+  
+  .links {
+    margin-left: 0;
+    display: none;
+    margin-top: 0;
+  }
+
+  .Navbar__ToggleShow {
+    display: flex;
+  }
+
+  #Navbar_Link-Toggle {
+    align-self: flex-end;
+    display: initial;
+    float: right;
+    margin-top: 2%;
+    margin-right: 2%;
+  }
+
+  #follow{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .carousel-container {
+    display: none;
+  }
+
+  .top-image {
+    margin-top: 35%;
+    margin-left: 30%;
+    flex-direction: column;
+  }
+
+  #carousel {
+    width: 50%; 
+    margin-left: 8%;
+  }
+  
+  #burgundy {
+    width: 100%;
+  }
+  #hashtag{
+    display: none;
+  }
+
+  #top {
+    margin-top: 35%;
+  }
+
+  #bottom,
+  #top {
+    flex-direction: column;
+    margin-right: 15%;
+  }
+  .pics {
+    width: 150%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .carousel-container {
+    display: none;
+  }
+
+  .top-image {
+    margin-top: 35%;
+    margin-left: 30%;
+    flex-direction: column;
+  }
+  #carousel {
+    width: 50%; 
+    margin-left: 8%;
+  }
+  #burgundy {
+    width: 100%;
+  }
+  #hashtag{
+    display: none;
+  }
+  #top {
+    margin-top: 35%;
+  }
+  #bottom,
+  #top {
+    flex-direction: column;
+    margin-right: 15%;
+  }
+  .footer{
+    margin-top: 45%;
+  }
+  .pics {
+    width: 150%;
+  }
+}
+
+
+/*end of responsive web design*/

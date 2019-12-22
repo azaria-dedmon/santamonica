@@ -1,0 +1,366 @@
+.Navbar {
+  text-align: center;
+  display: block;
+  margin-top: 2%;
+}
+  
+#center-logo {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  text-align: center;
+}
+    
+#Navbar_Link-Toggle {
+  display: none;
+}
+  
+img {
+  width: 40%;
+}
+  
+.links {
+  text-decoration: none;
+  font-size: 13px;
+  color: black;
+  font-weight: bold;
+  padding: 25px;
+}
+        
+.links:hover {
+  color: #f58300
+}
+        
+a:visited {
+  color: black;
+}    
+  
+  
+.header {
+  width: 100%;
+  margin-top: 3%;
+  height: auto;
+}
+  
+  
+#food {
+  height: 65vh;
+  width: 100%;
+}
+
+
+.blue,
+.green {
+  background-color: #57afb5;
+  flex-basis: 100%;
+  height: 350px;
+  flex: 1;
+  border-radius: 25px;
+  margin-left: 5%;
+}
+  
+.dark-green,
+.orange {
+  background-color: #29914c;  
+  flex-basis: 100%;
+  height: 350px;
+  flex: 1;
+  margin-left: 2%;
+  border-radius: 25px;
+  margin-right: 5%;
+}
+  
+.green{ 
+  background-color: #91e3ad;
+  
+}
+  
+.orange {
+  background-color: #c98a32;
+}
+
+.header {
+  width: 100%;
+  margin-top: 3%;
+  height: auto;
+}
+    
+#food {
+  height: 65vh;
+  width: 100%;
+}
+
+.top,
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2%;
+  height: 400px;
+  margin-left: 10%;
+  margin-right: 10%
+}
+
+
+
+.footer {
+  display: flex;
+  margin-top: 5%;
+  width: 100%;
+  align-items: center;
+  font-size: 8px; 
+  background-color: #f7f7f7;
+  height: 20%;
+  flex-direction: column;
+  color: black;
+  font-family: 'Quicksand', sans-serif;
+}
+
+#first,
+#second,
+#third,
+#fourth
+{
+  display: none;
+}
+
+
+button {
+  background-color: #c3c9c5;
+  border: none;
+  color: white;
+  padding: 5px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 12px;
+  margin-left: 38%;
+  margin-top: 10%;
+  border-radius: 12px;
+  opacity: 0.8;
+  outline: none;
+}
+
+button:hover {
+  opacity: 0.1
+}
+
+
+.top-left,
+.top-right{
+  font-size: 18px;
+  text-align: left;
+  color: #dedede;
+  font-family: 'Gupter', serif;
+  padding-top: 5%;
+  padding-left: 3%;
+  font-weight: bold;
+  opacity: 0.8;
+}
+
+.top-left:nth-child(1) {
+  opacity: 0.5;
+}
+
+.top-right{
+  color: #f0d289;
+}
+
+.top-right:nth-child(1){
+  opacity: 0.5;
+}
+
+.bottom-left,
+.bottom-right{
+  font-size: 18px;
+  text-align: left;
+  color:#a6753a;
+  font-family: 'Gupter', serif;
+  padding-top: 5%;
+  padding-left: 3%;
+  font-weight: bold;
+  opacity: 0.8;
+}
+.bottom-left:nth-child(1) {
+  opacity: 0.5;
+}
+
+.bottom-right{
+  color: #dedede;
+}
+.bottom-right:nth-child(1) {
+  opacity: 0.5;
+}
+
+
+/* responsive web design*/
+
+@media only screen and (max-width: 768px) {
+  .top, 
+  .bottom {
+    display: flex;
+    flex-direction: column;
+  }
+  .bottom {
+    margin-top: 3%;
+    margin-bottom: 3%;
+  }
+
+  .footer{
+    display: flex;
+  }
+
+  img,
+  .Navbar {
+    text-align: left;
+    margin-top: 2%;
+  }
+  
+  .links {
+   margin-left: 0;
+  display: none;
+   margin-top: 0;
+  }
+
+  .Navbar__ToggleShow {
+    display: flex;
+  }
+
+  #Navbar_Link-Toggle {
+    align-self: flex-end;
+    display: initial;
+    float: right;
+    margin-top: 2%;
+    margin-right: 2%;
+  }
+
+  .blue,
+  .green{
+    margin-left: 0;
+    margin-right: 5%;
+  } 
+  .dark-green,
+  .orange{
+    margin-left: 0;
+    margin-top: 3%
+  }
+
+  .green {
+    margin-top: 2%;
+  }
+
+  button{
+    display: none;
+  }
+  #first,
+  #second,
+  #third,
+  #fourth{
+    display: inline-block;
+  }
+  .blue,
+  .dark-green,
+  .green,
+  .orange {
+    height: 30%;
+  }
+  .top-left,
+  .bottom-left{
+    font-size: 12px;
+    height: 5%;
+  }
+  .top-right,
+  .bottom-right{
+    font-size: 12px;
+    height: 5%;
+  }
+  .green,
+  .orange{
+    width: 95%;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .top {
+    margin-top: 35%;
+  }
+  #food {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  #food,
+  button {
+    display: none;
+  }
+  .top {
+    margin-top: 35%;
+    margin-left: 15%;
+  }
+  .bottom {
+    margin-top: 3%;
+    margin-bottom: 5%;
+  }
+ 
+  #first,
+  #second,
+  #third,
+  #fourth{
+    display: inline-block;
+  }
+  .blue,
+  .dark-green,
+  .green,
+  .orange {
+    height: 30%;
+  }
+  .top-left,
+  .bottom-left{
+    font-size: 12px;
+    height: 5%;
+  }
+  .top-right,
+  .bottom-right{
+    font-size: 12px;
+    height: 15%;
+  }
+  .green,
+  .orange{
+    width: 90%;
+    margin-left: 5%;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+ 
+  button{
+    display: none;
+  }
+  #first,
+  #second,
+  #third,
+  #fourth{
+    display: inline-block;
+  }
+
+  .footer{
+    margin-top: 10%;
+  }
+  .blue,
+  .dark-green,
+  .green,
+  .orange {
+    height: 30%;
+  }
+  .top-left,
+  .bottom-left{
+    font-size: 12px;
+    height: 5%;
+  }
+  .top-right,
+  .bottom-right{
+    font-size: 12px;
+    height: 15%;
+  }
+}
+
+/*end of responsive web design*/

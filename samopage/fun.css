@@ -1,0 +1,169 @@
+.Navbar {
+  text-align: center;
+  display: block;
+  margin-top: 2%;
+}
+  
+#center-logo {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  text-align: center;
+  }
+  
+  
+#Navbar_Link-Toggle {
+  display: none;
+}
+
+.links {
+  text-decoration: none;
+  font-size: 13px;
+  color: black;
+  font-weight: bold;
+  padding: 25px;
+}
+  
+.links:hover {
+  color: #f58300
+}
+  
+a:visited {
+  color: black;
+}
+
+.header {
+  width: 100%;
+  margin-top: 3%;
+  height: auto;
+ }
+      
+      
+#rides {
+  height: 65vh;
+  width: 100%;
+}
+
+.boxes-top{
+  display: flex;
+  margin-top: 2%;
+  justify-content: space-between;
+} 
+
+.boxes-top div,
+.boxes-bottom div{
+  padding: 10px;
+}
+
+.boxes-bottom{
+  display: flex;
+  margin-top: 2%;
+  justify-content: space-between;
+} 
+
+
+.box-1,
+.box-2,
+.box-3 {
+  flex: 1;
+  min-height: 150px;
+  margin-left: 5%;
+}
+.box-3 {
+  margin-right: 5%;
+}
+
+h2 {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bold;
+  color: #e6e9ed;
+  opacity: 0.5;
+}
+
+p {
+  font-family: 'Quicksand', sans-serif;
+  color: #e6e9ed;
+  opacity: 0.8;
+}
+
+.boxes{
+  background-color: grey;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.footer {
+  display: flex;
+  margin-top: 3%;
+  width: 100%;
+  font-size: 10px; 
+  background-color: #f7f7f7;
+  align-items: center;
+  flex-direction: column;
+}
+
+.foot{
+  height: 20%;
+  font-size: 8px;
+  color: black;
+}
+
+/* responsive web design */
+@media screen and (max-width: 768px){
+
+.footer{
+  display: flex;
+  margin-top: 10%;
+}
+
+.boxes-top,
+.boxes-bottom {
+  display: flex;
+  flex-direction: column;
+  } 
+
+.links {
+  margin-left: 0;
+  display: none;
+  margin-top: 0;
+  }
+
+.Navbar__ToggleShow {
+  display: flex;
+  }
+
+#Navbar_Link-Toggle {
+  align-self: flex-end;
+  display: initial;
+  float: right;
+  margin-top: 2%;
+  margin-right: 2%;
+  }
+
+  img,
+  .Navbar {
+  text-align: left;
+  margin-top: 2%;
+  }
+}
+
+@media only screen and (max-width: 414px){
+  .header{
+    display: none;
+  }
+
+  .boxes{
+    margin-top: 35%;
+  }
+}
+
+@media only screen and (max-width: 375px){
+  .header{
+    display: none;
+  }
+
+  .boxes{
+    margin-top: 35%;
+  }
+}
+/* end of responsive web design */

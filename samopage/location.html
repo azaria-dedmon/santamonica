@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Location</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="location.css">
+    <script src="location.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+    <link href="css/all.css" rel="stylesheet">
+  </head>
+  <body>
+    <div id='Navbar_Link-Toggle' style='font-size: 20px'>   
+      <i id='main' class='fas fa-bars'></i>
+    </div> 
+    <div class='container'>
+      <div class='Navbar'>
+          <a class='links' href='food.html'>FOOD</a>
+          <a class='links' href='fun.html'>FUN</a>
+          <a href='samopage.html'>
+          <img id='center-logo' src='img/SAMO.png'></a> 
+          <a class='links' href='history.html'>HISTORY</a> 
+          <a class='links' href='location.html'>LOCATION</a>
+      </div>
+    </div>
+    <div id='location'>
+      <p class='loc'>Neighborhood: Pier/Ocean Ave</p>
+      <p class='loc'>200 Santa Monica Pier, Santa Monica, CA 90401</p>
+    </div>
+    <div id='content'>
+     <div id='map'></div>
+    </div> 
+    <script src="samo.js"></script>
+    <div class='footer'>
+      <p class='foot'>200 Santa Monica Pier, Suite A Santa Monica, CA 90401</p><br>
+      <p class='foot'>Questions? Drop us a message at: info@santamonicapier.org or 310-458-8900</p><br> 
+      <p class='foot'>All Rights Reserved © 2019 Santa Monica Pier</p>
+    </div>    
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDMBBb1x9rLhC0oAF_z6TuQ_3ZIj3GrxRg&callback=initMap"></script>
+  </body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Food</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="food.css">
+    <link href="https://fonts.googleapis.com/css?family=Gupter&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+    <link href="css/all.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class='main-content'>
+      <div id='Navbar_Link-Toggle' style='font-size: 20px'>   
+          <i id='main' class='fas fa-bars'></i>
+      </div> 
+      <div class='container'>
+        <div class='Navbar'>
+          <a class='links' href='food.html'>FOOD</a>
+          <a class='links' href='fun.html'>FUN</a>
+          <a href='samopage.html'>
+          <img id='center-logo' src='img/SAMO.png'></a>  
+          <a class='links' href='history.html'>HISTORY</a> 
+          <a class='links' href='location.html'>LOCATION</a> 
+        </div> 
+      </div>
+      <div class='header'>
+        <img id='food' src='img/food.jpg'>
+      </div>
+    </div>
+      <div class='top'>
+        <div class='blue'>
+          <p class='top-left'>Seaside on the Pier</p>
+          <p class='top-left'>Sandwich Shop · Grill · Rooftop Lounge Now Open!</p>
+          <p class='top-left' id='first'>Hours: M-T 11AM – 10P, F-Sa 11AM – 11PM, Su 11AM – 9PM<br>
+          Phone: (310) 883-7437</p>
+          <button type='button' onclick ='foodInfoToggle1()'>Details</button>
+        </div>
+            
+        <div class='dark-green'>
+          <p class='top-right'>The Albright</p>
+          <p class='top-right'>You’re at the ocean, it’s only natural to partake. 
+          A wide array of seafood options combined with open-air patio dining for a 
+          pleasant Pier experience.</p>
+          <p class='top-right' id='second'>Hours: M-F, 12PM-9PM, Sa & Su 11AM-10PM<br>
+          Phone: (310) 394-9683</p>
+          <button type='button' onclick ='foodInfoToggle2()'>Details</button>
+        </div>
+      </div>
+      <div class='bottom'>
+        <div class='green'>
+          <p class='bottom-left'>Pacific Park Food Court</p>
+          <p class='bottom-left'>Can’t decide? This food 
+          court’s got all the classic options to keep your 
+          energy up for more fun.</p>
+          <p class='bottom-left' id='third'>Hours: M-Th 11am-10pm, F 11AM – 11PM, Sa 8AM – 11PM, Su 8AM – 10PM<br>
+          Phone: (310) 393-0458</p>
+          <button type='button' onclick ='foodInfoToggle3()'>Details</button>   
+        </div> 
+
+        <div class='orange'>
+          <p class='bottom-right'>Bubba Gump Shrimp</p>
+          <p class='bottom-right'>Putting the South in Southern California, Bubba’s is the 
+          lively spot to get your shrimp fix or even some Dixie-style baby back ribs. 
+          Come hungry.</p>
+          <p class='bottom-right' id='fourth'>Hours: Hours vary.<br>
+          Phone: (310) 260-8744</p>
+          <button type='button' onclick ='foodInfoToggle4()'>Details</button>    
+        </div> 
+    </div>
+        <script src="samo.js"></script>
+        <script src='food.js'></script>
+    <div class='footer'>
+      <p>200 Santa Monica Pier, Suite A Santa Monica, CA 90401</p><br>
+      <p>Questions? Drop us a message at: info@santamonicapier.org or 310-458-8900</p><br> 
+      <p>All Rights Reserved © 2019 Santa Monica Pier</p>
+    </div>
+  </body>
+</html>
